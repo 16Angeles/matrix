@@ -75,7 +75,7 @@ int main() {
         output_matrix(M, n, m);
         return 0;
     }
-    if ((n == x) and (m == y) and (m != x)) {
+    else if ((n == x) and (m == y) and (m != x)) {
         sum_matrix(T, S, C, n, m);
         comp_matrix(T, S, M, n, m, x, y);
         cout << "Сумма матриц" << endl;
@@ -83,7 +83,7 @@ int main() {
         cout << "Умножение матриц невозможно" << endl;
         return 0;
     }
-    if ((n != x) and (m != y) and (m == x)) {
+    else if ((n != x) or (m != y) and (m == x)) {
         sum_matrix(T, S, C, n, m);
         comp_matrix(T, S, M, n, m, x, y);
         cout << "Сумма матриц невозможна" << endl;
