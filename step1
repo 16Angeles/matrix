@@ -60,13 +60,13 @@ int main() {
     cin >> n >> m;
     cout << "Кол-во строк/столбцов второй матрицы" << endl;
     cin >> x >> y;
+    int **T = create_martix(n, m);
+    int **S = create_martix(x, y);
+    int **C = create_martix(n, m);
+    int **M = create_martix(n, m);
+    input_matrix(T, n, m);
+    input_matrix(S, x, y);
     if ((n == x) and (m == y) and (m == x)) {
-        int **T = create_martix(n, m);
-        int **S = create_martix(x, y);
-        int **C = create_martix(n, m);
-        int **M = create_martix(n, m);
-        input_matrix(T, n, m);
-        input_matrix(S, x, y);
         sum_matrix(T, S, C, n, m);
         comp_matrix(T, S, M, n, m, x, y);
         cout << "Сумма матриц" << endl;
@@ -76,12 +76,6 @@ int main() {
         return 0;
     }
     if ((n == x) and (m == y) and (m != x)) {
-        int **T = create_martix(n, m);
-        int **S = create_martix(x, y);
-        int **C = create_martix(n, m);
-        int **M = create_martix(n, m);
-        input_matrix(T, n, m);
-        input_matrix(S, x, y);
         sum_matrix(T, S, C, n, m);
         comp_matrix(T, S, M, n, m, x, y);
         cout << "Сумма матриц" << endl;
@@ -90,12 +84,6 @@ int main() {
         return 0;
     }
     if ((n != x) and (m != y) and (m == x)) {
-        int **T = create_martix(n, m);
-        int **S = create_martix(x, y);
-        int **C = create_martix(n, m);
-        int **M = create_martix(n, m);
-        input_matrix(T, n, m);
-        input_matrix(S, x, y);
         sum_matrix(T, S, C, n, m);
         comp_matrix(T, S, M, n, m, x, y);
         cout << "Сумма матриц невозможна" << endl;
