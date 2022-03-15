@@ -49,7 +49,7 @@ void comp_matrix(int **A,int **B,int **Res, int n, int m, int x, int y){
         for (int j=0;j<y;j++)
         {
             for(int k=0;k<m;k++)
-            Res[i][j] += A[i][k] * B[k][j];
+                Res[i][j] += A[i][k] * B[k][j];
         }
     }
 }
@@ -77,14 +77,12 @@ int main() {
     }
     else if ((n == x) and (m == y) and (m != x)) {
         sum_matrix(T, S, C, n, m);
-        comp_matrix(T, S, M, n, m, x, y);
         cout << "Сумма матриц" << endl;
         output_matrix(C, n, m);
         cout << "Умножение матриц невозможно" << endl;
         return 0;
     }
     else if ((n != x) or (m != y) and (m == x)) {
-        sum_matrix(T, S, C, n, m);
         comp_matrix(T, S, M, n, m, x, y);
         cout << "Сумма матриц невозможна" << endl;
         cout << "Умножение матриц" << endl;
