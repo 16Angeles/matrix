@@ -82,7 +82,7 @@ int main() {
         cout << "Умножение матриц невозможно" << endl;
         return 0;
     }
-    else if ((n != x) or (m != y) and (m == x)) {
+    else if (((n != x) or (m != y)) and (m == x)) {
         comp_matrix(T, S, M, n, m, x, y);
         cout << "Сумма матриц невозможна" << endl;
         cout << "Умножение матриц" << endl;
