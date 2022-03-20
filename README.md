@@ -46,6 +46,18 @@
 
 Не путайте размерности!!
 
-Ксати лучшая песня 
+Кстати лучшая песня 
 
 ![image](https://user-images.githubusercontent.com/90519311/158450578-36d0440b-f6ee-4319-b42f-bf4e6dc6db1b.png)
+
+# ОТПРАВ(ОЧКА)
+1 способ(кстати Гоша Демьянчук - администратор коворкинга на кронве)
+
+git add
+
+git commit -m "cum mit" 
+
+git remote add origin ссылка на удаленный репозиторий
+
+git push origin master
+
